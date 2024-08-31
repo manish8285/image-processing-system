@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "d591ef3c-467c-47c4-8ea3-27a6102b4479",
+		"name": "image compresser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30645579",
+		"_collection_link": "https://hx7777.postman.co/workspace/qloqal~43ca0690-175a-4d46-a062-f2c7b1f8db00/collection/30645579-d591ef3c-467c-47c4-8ea3-27a6102b4479?action=share&source=collection_link&creator=30645579"
+	},
+	"item": [
+		{
+			"name": "upload csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/dev/Documents/testData.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/dev/Documents/testData.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/status/dc1acc17-60d1-4bfb-8184-c7e0583c0e1c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"status",
+						"dc1acc17-60d1-4bfb-8184-c7e0583c0e1c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/dev/Documents/testData.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://images.unsplash.com/photo-1496950866446-3253e1470e8e",
+					"protocol": "https",
+					"host": [
+						"images",
+						"unsplash",
+						"com"
+					],
+					"path": [
+						"photo-1496950866446-3253e1470e8e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
